@@ -1,0 +1,4 @@
+digraph CondensationGraph {
+    rankdir=LR;
+    0 [shape=box, label="SCC 0\n{19,13,4,17,9,3,14,23,16,5,1,15,11,2,12,18,22,7,10,20,21,6,8,24,0}"];
+}
