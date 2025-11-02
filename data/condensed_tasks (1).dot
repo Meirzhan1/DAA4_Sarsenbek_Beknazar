@@ -1,0 +1,13 @@
+digraph CondensationGraph {
+    rankdir=LR;
+    0 [shape=box, label="SCC 0\n{3,2,1}"];
+    1 [shape=box, label="SCC 1\n{0}"];
+    2 [shape=box, label="SCC 2\n{7}"];
+    3 [shape=box, label="SCC 3\n{6}"];
+    4 [shape=box, label="SCC 4\n{5}"];
+    5 [shape=box, label="SCC 5\n{4}"];
+    1 -> 0 [label="3"];
+    3 -> 2 [label="1"];
+    4 -> 3 [label="5"];
+    5 -> 4 [label="2"];
+}

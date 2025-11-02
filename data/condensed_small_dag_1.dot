@@ -1,0 +1,20 @@
+digraph CondensationGraph {
+    rankdir=LR;
+    0 [shape=box, label="SCC 0\n{4}"];
+    1 [shape=box, label="SCC 1\n{6}"];
+    2 [shape=box, label="SCC 2\n{5}"];
+    3 [shape=box, label="SCC 3\n{0}"];
+    4 [shape=box, label="SCC 4\n{1}"];
+    5 [shape=box, label="SCC 5\n{3}"];
+    6 [shape=box, label="SCC 6\n{8}"];
+    7 [shape=box, label="SCC 7\n{2}"];
+    8 [shape=box, label="SCC 8\n{7}"];
+    9 [shape=box, label="SCC 9\n{9}"];
+    2 -> 1 [label="8"];
+    3 -> 2 [label="6"];
+    3 -> 0 [label="5"];
+    5 -> 0 [label="3"];
+    5 -> 2 [label="8"];
+    7 -> 5 [label="3"];
+    7 -> 6 [label="8"];
+}
